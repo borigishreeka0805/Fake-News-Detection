@@ -53,6 +53,7 @@ fake-news-detector/
 ├── templates/
 ├── model/
 └── dataset/   # Ignored from GitHub
+---
 
 Installation
 Clone Repository
