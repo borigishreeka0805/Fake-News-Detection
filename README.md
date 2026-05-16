@@ -53,40 +53,83 @@ fake-news-detector/
 ├── templates/
 ├── model/
 └── dataset/   # Ignored from GitHub
+```
+
 ---
 
-Installation
-Clone Repository
+## Installation
+
+### Clone Repository
+
+```bash
 git clone https://github.com/yourusername/Fake-News-Detection.git
-Navigate to Project
+```
+
+### Navigate to Project
+
+```bash
 cd Fake-News-Detection
-Create Virtual Environment
+```
+
+### Create Virtual Environment
+
+```bash
 python -m venv venv
-Activate Virtual Environment
-Windows
+```
+
+### Activate Virtual Environment
+
+#### Windows
+
+```bash
 .\venv\Scripts\Activate
-Mac/Linux
+```
+
+#### Mac/Linux
+
+```bash
 source venv/bin/activate
-Install Dependencies
+```
+
+### Install Dependencies
+
+```bash
 pip install -r requirements.txt
-Run the Project
+```
+
+---
+
+## Run the Project
+
+```bash
 python app.py
-Dataset
+```
+
+---
+
+## Dataset
 
 The dataset files are not uploaded to GitHub because of GitHub's file size limitations.
 
 You can download datasets from:
 
-Kaggle
-WELFake Dataset
-Fake News Dataset sources
+- Kaggle
+- WELFake Dataset
+- Fake News Dataset sources
 
-After downloading, place the dataset files inside the dataset/ folder.
+After downloading, place the dataset files inside the `dataset/` folder.
 
-Future Improvements
-AI chatbot integration
-Multi-language support
-Deep Learning implementation
-User authentication system
-News source verification API
-Real-time news analysis
+---
+
+## Future Improvements
+
+- AI chatbot integration
+- Multi-language support
+- Deep Learning implementation
+- User authentication system
+- News source verification API
+- Real-time news analysis
+
+---
+
+
