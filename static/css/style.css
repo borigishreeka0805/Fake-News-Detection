@@ -1,0 +1,350 @@
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(135deg,#667eea,#764ba2);
+color:white;
+min-height:100vh;
+margin:0;
+overflow-x:hidden;
+}
+
+/* Particles background */
+
+#particles-js{
+position:fixed;
+width:100%;
+height:100%;
+z-index:-1;
+}
+
+/* Navbar */
+
+.topnav{
+display:flex;
+justify-content:space-between;
+padding:20px 50px;
+}
+
+.topnav a{
+margin-left:20px;
+text-decoration:none;
+color:white;
+}
+
+/* Hero */
+
+.hero{
+height:85vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.hero-content h1{
+font-size:48px;
+margin-bottom:15px;
+}
+
+.hero-content p{
+font-size:18px;
+max-width:600px;
+margin:auto;
+margin-bottom:30px;
+}
+
+.cta-btn{
+padding:15px 35px;
+border-radius:10px;
+border:none;
+background:linear-gradient(90deg,#00f2fe,#4facfe);
+font-size:16px;
+cursor:pointer;
+}
+
+/* Feature Cards */
+
+.features{
+padding:70px 20px;
+text-align:center;
+}
+
+.feature-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.feature-card{
+background:rgba(255,255,255,0.12);
+padding:25px;
+border-radius:15px;
+backdrop-filter:blur(10px);
+transition:0.3s;
+}
+
+.feature-card:hover{
+transform:translateY(-8px);
+}
+
+/* Prediction Result */
+
+.result{
+margin-top:20px;
+padding:25px;
+border-radius:15px;
+text-align:center;
+}
+
+.real{
+background:#27ae60;
+}
+
+.fake{
+background:#e74c3c;
+}
+
+.uncertain{
+background:#f39c12;
+}
+
+/* Confidence Meter */
+
+.meter{
+height:20px;
+background:white;
+border-radius:10px;
+margin-top:10px;
+overflow:hidden;
+}
+
+.meter-bar{
+height:100%;
+width:0%;
+background:#00ffc3;
+transition:width 1s;
+}
+
+/* Loader */
+
+.loading{
+margin-top:20px;
+font-size:18px;
+animation:pulse 1.5s infinite;
+}
+
+.hidden{
+display:none;
+}
+
+@keyframes pulse{
+0%{opacity:0.3}
+50%{opacity:1}
+100%{opacity:0.3}
+}
+
+/* Responsive */
+
+@media(max-width:700px){
+
+.hero-content h1{
+font-size:32px;
+}
+
+}
+
+.container{
+
+width:100%;
+max-width:800px;
+margin:100px auto;
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(15px);
+padding:40px;
+border-radius:20px;
+box-shadow:0 15px 35px rgba(0,0,0,0.3);
+
+}
+
+input{
+
+width:100%;
+padding:14px;
+margin-top:10px;
+border-radius:10px;
+border:none;
+outline:none;
+
+}
+
+button{
+
+width:100%;
+padding:14px;
+margin-top:15px;
+border:none;
+border-radius:10px;
+background:linear-gradient(90deg,#00f2fe,#4facfe);
+font-weight:bold;
+cursor:pointer;
+
+}
+
+button:hover{
+
+transform:scale(1.04);
+
+}
+
+.history-card{
+
+background:rgba(255,255,255,0.12);
+padding:18px;
+border-radius:12px;
+margin-top:15px;
+
+}
+
+.main-wrapper{
+
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+
+}
+
+/* Container */
+
+.container{
+
+width:100%;
+max-width:900px;
+background:rgba(255,255,255,0.12);
+backdrop-filter:blur(15px);
+padding:40px;
+border-radius:20px;
+box-shadow:0 10px 40px rgba(0,0,0,0.3);
+
+}
+
+/* Back button */
+
+.back-btn{
+
+display:inline-block;
+margin-bottom:20px;
+text-decoration:none;
+color:white;
+
+}
+
+/* Inputs */
+
+textarea{
+
+width:100%;
+height:140px;
+padding:15px;
+border-radius:10px;
+border:none;
+margin-top:10px;
+font-size:15px;
+
+}
+
+input{
+
+width:100%;
+padding:15px;
+border-radius:10px;
+border:none;
+margin-top:10px;
+
+}
+
+/* Buttons */
+
+button{
+
+width:100%;
+padding:14px;
+border:none;
+border-radius:10px;
+margin-top:15px;
+background:linear-gradient(90deg,#00f2fe,#4facfe);
+font-weight:bold;
+cursor:pointer;
+
+}
+
+button:hover{
+
+transform:scale(1.03);
+
+}
+
+.or-text{
+
+text-align:center;
+margin:15px 0;
+
+}
+
+/* History cards */
+
+.history-card{
+
+background:rgba(255,255,255,0.15);
+padding:20px;
+border-radius:12px;
+margin-top:15px;
+
+}
+
+/* Delete button */
+
+.delete-btn{
+
+background:#e74c3c;
+
+}
+
+/* Loader */
+
+.loader{
+
+margin-top:25px;
+text-align:center;
+
+}
+
+.hidden{
+display:none;
+}
+
+.spinner{
+
+border:6px solid rgba(255,255,255,0.2);
+border-top:6px solid #00f2fe;
+border-radius:50%;
+width:50px;
+height:50px;
+animation:spin 1s linear infinite;
+margin:auto;
+
+}
+
+@keyframes spin{
+
+0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}
+
+}
+
+.loader p{
+
+margin-top:10px;
+font-size:16px;
+
+}
